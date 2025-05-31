@@ -536,16 +536,17 @@ body {
 .outer_layer{
     position: absolute;
     width: 100%;
-    height: 97dvh;
+    height: 91dvh;
     background-color: rgba(23, 23, 23, 0.7);
     display: none;
     justify-content: center;
     align-items: center;
-    transition: all 0.5s ;
+    transition: all 0.5s;
 }
 .inner_details{
+    position: relative;
     width:25rem ;
-    height: auto;
+    max-height: 20rem;
     background-color: #00c803;
     color:#000 !important;
     padding: 30px;
@@ -574,6 +575,7 @@ body {
     box-shadow: 0 0 5px #52ff18,0 0 10px #52ff18;
 }
 .close{
+    position: absolute;
     background-color: transparent;
     color: #000;
     border: none;
@@ -585,7 +587,12 @@ body {
     }
     .project{
         width: 15rem;
+        height: auto;
         margin-left: 13px;
+    }
+    .inner_details{
+        width: 250px;
+        min-height: 410px;
     }
 }
 

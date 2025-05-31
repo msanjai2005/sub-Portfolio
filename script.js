@@ -83,7 +83,7 @@ function showDetails(e){
 
                    3. Responsive design for mobile and desktop <br><br>
 
-                   4. Simple and user-friendly interface <br><br>
+                   4. Simple and user-friendly interface <br>
                 </p>
                 <button class="btn">Explore</button>
             </div>`
