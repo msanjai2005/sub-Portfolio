@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#00ff00">
+    <title>Sanjai's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- --------------------Navigation Bar----------------- -->
+    <div class="navbar-container">
+        <nav class="menu">
+            <ul class="sidebar">
+                <li><a href="#Home"><img onclick="sidebarClose()" src="images/svg2.svg" alt="" ></a></li>
+                <li ><a class="menuL"  href="#Home">Home</a></li>
+                <li ><a class="menuL" href="#About">About</a></li>
+                <li ><a class="menuL" href="#skills">Skills</a></li>
+                <li ><a class="menuL" href="#project">Projects</a></li>
+                <li ><a class="menuL" href="#Contact">Contact</a></li>  
+            </ul>
+            <ul class="mainbar">
+                <li><a href="#Home">Portfolio</a></li>
+                <li class="hideOnMobile"><a href="#Home">Home</a></li>
+                <li class="hideOnMobile"><a href="#About">About</a></li>
+                <li class="hideOnMobile"><a href="#skills">Skills</a></li>
+                <li class="hideOnMobile"><a href="#project">Projects</a></li>
+                <li class="hideOnMobile"><a href="#Contact">Contact</a></li>  
+                <li class="hamburger" onclick="sidebarShow()"><img src="images/svg1.svg" alt=""></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- -------------------Home-page------------------- -->
+    <div class="Home">
+        <div class="inner-home">
+            <div class="Small_about">
+                <h3>Hello It's me</h3>
+                <h1>SANJAI M</h1>
+                <h2>I'm a  <span id="dynamic-role"></span>|</h2>
+                <p>Hi, I'm  a Frontend Developer crafting responsive and engaging web experiences.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/sanjai-m12/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/msanjai2005" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://leetcode.com/u/sanjaim2005/" target="_blank"><i class="fas fa-code"></i></a>
+                    <a href="https://www.instagram.com/sanjai_m_official/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <button>Download CV <i class="fa-solid fa-file-lines"></i></button>
+            </div>
+            <img src="image.png" alt="">
+        </div>
+    </div>
+    <!-- ---------------------About-Page------------------- -->
+     <div class="about">
+        <h1>About <span> Me</span></h1>
+        <div class="inner_about">
+            <img class="abtimg" src="image.png" alt="">
+            <div class="full_about">
+                <div class="abt_box">
+                    <div>
+                        <i class="fa-solid fa-medal"></i>
+                        <h3>Experience</h3>
+                        <p>Fersher</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-list-check"></i>
+                        <h3>Completed</h3>
+                        <p>2+ projects</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-headphones"></i>
+                        <h3>Support</h3>
+                        <p>Online 24/7</p>
+                    </div>
+                </div>
+                <p> I'm a passinate frontend Developer focused on creating responsive and engaging web interfaces.
+                    I love bringing designs to life with clean, accessible and modern code.
+                </p>
+                <button>Get in Touch <i class="fas fa-paper-plane"></i> </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------Skills-page-------------------- -->
+
+    <div class="skill">
+        <h1>Skills</h1>
+        <div class="inner_skill">
+            <div class="programming"></div>
+            <div class="web"></div>
+        </div>
+    </div>
+
+    <!-- --------------------Project-page------------------ -->
+
+    <div class="projects">
+        <h1><span>My </span> Creations</h1>
+        <div class="inner_project">
+            <div class="project">
+                <h2>Restuarant Web APP</h2>
+                <p>A responsive restaurant website with menu 
+                    display and table reservation features,
+                    built for a smooth user experience.</p>
+                <button onclick="showDetails(0)">Learn more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="project">
+                <h2>Recipe App</h2>
+                <p>A simple and responsive app to browse and 
+                    view recipes with ingredients and instructions. 
+                    Built for easy meal planning and inspiration.</p>
+                <button onclick="showDetails(1)">Learn more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="project">
+                <h2>Guess The Number Game</h2>
+                <p>An interactive number guessing game 
+                    with instant feedback. Enhances logical 
+                    thinking in a fun and engaging way.
+                </p>
+                <button onclick="showDetails(2)">Learn more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="project">
+                <h2>Rock-Paper-Scissor Game</h2>
+                <p>A classic rock-paper-scissors game 
+                    with score tracking. Features clean UI and 
+                    simple game logic for quick play.</p>
+                <button onclick="showDetails(3)">Learn more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="project">
+                <h2>To-Do-List App</h2>
+                <p>A lightweight app to manage daily tasks with add, 
+                    delete, and mark-complete features.
+                    Designed for productivity and ease of use.</p>
+                <button onclick="showDetails(4)">Learn more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="project">
+                <h2>Calculator App</h2>
+                <p>A basic calculator for performing 
+                    arithmetic operations. Built with a clean 
+                    interface and real-time input handling.</p>
+                <button onclick="showDetails(5)">Learn more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="outer_layer"></div>
+    </div>
+
+    <!-- ---------------------------Contact-page---------------------- -->
+
+    <div class="contacts">
+        <h1>Get In Touch</h1>
+        <div class="inner_contact">
+            <div class="contact">
+                <h3>Talk to Me</h3>
+                <div class="mail">
+                    <i class="fa-solid fa-envelopes-bulk"></i>
+                    <h4>Email</h4>
+                    <p>msanjai1012@gmail.com</p>
+                    <p style="display: inline;">send me  <i  class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                </div>
+                <div class="number">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <h4>Whatsapp</h4>
+                    <p>+91 8148804539</p>
+                    <p style="display: inline;">send me <i  class="fa-solid fa-arrow-up-right-from-square"></i></p> 
+                </div>
+            </div>
+            <div class="outer_form">
+                <h3>Feel free to message</h3>
+                <form action="mailto:msanjai1012@gmail.com" method="post" enctype="text/plain" class="form">
+                    <input type="text" for="name" placeholder="Type Your Name"><br>
+                    <input type="email" for="email" placeholder="Type Your Email"><br>
+                     <textarea name="message" placeholder="Type Your Message"></textarea><br>
+                    <input type="submit" class="submit" value="Send Message">
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
