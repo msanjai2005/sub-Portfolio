@@ -1,6 +1,6 @@
  
  
-    //side-menu-bar
+    //---------------------side-menu-bar----------------->
     
 function sidebarShow() {
     document.querySelector(".sidebar").classList.add("open");
@@ -8,7 +8,7 @@ function sidebarShow() {
 function sidebarClose() {
     document.querySelector(".sidebar").classList.remove("open");
 }
-    // Dynamic Role Typing
+    //------------------ Dynamic Role Typing------------->
 
 const roles = [
     "Data Scientist",
@@ -41,6 +41,7 @@ function typeRole() {
 typeRole();
 
 // ------------Skill-page----------->
+
 let i=0;
 let j=0;
 const Topic_skill=[
