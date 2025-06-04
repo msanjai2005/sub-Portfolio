@@ -606,6 +606,7 @@ body {
     align-items: center;
 }
 
+
 .inner_contact{
     width: 95%;
     min-height: 450px;
@@ -701,4 +702,9 @@ textarea{
     color: black;
     font-weight: 900;
     box-shadow: 0 0 5px cyan,0 0 10px cyan;
+}
+@media( max-width: 800px){
+    .contacts h1{
+        padding-top: 60px;
+    }
 }
