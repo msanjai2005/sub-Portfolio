@@ -73,24 +73,41 @@ for (i = 0; i<2; i++){
 
 // ------------------project-page--------------->
 
-const popup=document.querySelector('.outer_layer');
-function showDetails(e){
-    popup.style.display="flex"; 
-    popup.innerHTML=`<div class="inner_details">
-                <h3>Restuarant Web App</h3> <button onClick="closePop()" class="close"><img src="images/svg2.svg" alt="" ></img></button> <br><br>
-                <p>1. Browse and view multiple recipes with images <br><br>
+const projects = [
+      {
+        title: "Restuarant Web APP",
+        description: "A responsive restaurant website with menu display and table reservation features, built for a smooth user experience."
+      },
+      {
+        title: "Recipe App",
+        description: "A simple and responsive app to browse and view recipes with ingredients and instructions. Built for easy meal planning and inspiration."
+      },
+      {
+        title: "Guess The Number Game",
+        description: "An interactive number guessing game with instant feedback. Enhances logical thinking in a fun and engaging way."
+      },
+      {
+        title: "Rock-Paper-Scissor Game",
+        description: "A classic rock-paper-scissors game with score tracking. Features clean UI and simple game logic for quick play."
+      },
+      {
+        title: "To-Do-List App",
+        description: "A lightweight app to manage daily tasks with add, delete, and mark-complete features. Designed for productivity and ease of use."
+      },
+      {
+        title: "Calculator App",
+        description: "A basic calculator for performing arithmetic operations. Built with a clean interface and real-time input handling."
+      }
+    ];
 
-                   2. Display of ingredients and step-by-step instructions <br><br>
+    const container = document.getElementById("projects-container");
 
-                   3. Responsive design for mobile and desktop <br><br>
+    const projectHTML = projects.map(project => `
+      <div class="project">
+        <h2>${project.title}</h2>
+        <p>${project.description}</p>
+        <button><a href="https://github.com/msanjai2005" target=_blank>Learn more <i class="fa-solid fa-arrow-right"></i></a></button>
+      </div>
+    `).join("");
 
-                   4. Simple and user-friendly interface <br>
-                </p>
-                <button class="btn">Explore</button>
-            </div>`
-}
-
-function closePop(){
-    popup.style.display="none";
-}
-
+    container.innerHTML = projectHTML;
