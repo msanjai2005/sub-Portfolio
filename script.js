@@ -111,3 +111,16 @@ const projects = [
     `).join("");
 
     container.innerHTML = projectHTML;
+
+// ---------------------Contact-------------------------->
+
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      emailjs.sendForm("service_8nkkk6j", "template_yepo30y", this)
+        .then(() => {
+          alert("Message sent successfully!");
+          this.reset(); // Clear form
+        }, (err) => {
+          alert("Failed to send message. Error: " + JSON.stringify(err));
+        });
+    });

@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#00ff00">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("A7igV-AA2vg_sAQ9F"); // Replace with your EmailJS Public Key
+      })();
+    </script>
     <title>Sanjai's Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -121,10 +126,11 @@
             </div>
             <div class="outer_form">
                 <h3>Feel free to message</h3>
-                <form action="mailto:msanjai1012@gmail.com" method="post" enctype="text/plain" class="form">
-                    <input type="text" placeholder="Type Your Name"><br>
-                    <input type="email" placeholder="Type Your Email"><br>
-                     <textarea name="message" placeholder="Type Your Message"></textarea><br>
+                <form id="contact-form" class="form">
+                    <input type="text" name="name"placeholder="Type Your Name"><br>
+                    <input type="email" name="email" placeholder="Type Your Email"><br>
+                    <input type="text" name="title" placeholder="Subject" required><br>
+                    <textarea name="message" placeholder="Type Your Message"></textarea><br>
                     <input type="submit" class="submit" value="Send Message">
                 </form>
             </div>
