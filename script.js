@@ -122,5 +122,5 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
           this.reset(); // Clear form
         }, (err) => {
           alert("Failed to send message. Error: " + JSON.stringify(err));
-        });
-    });
+      });
+});
