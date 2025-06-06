@@ -82,7 +82,7 @@ const projects = [
       {
         title: "Recipe App",
         description: "A simple and responsive app to browse and view recipes with ingredients and instructions. Built for easy meal planning and inspiration.",
-        link:"https://github.com/msanjai2005/" 
+        link:"https://github.com/msanjai2005/RecipeApp" 
       },
       {
         title: "Guess The Number Game",
