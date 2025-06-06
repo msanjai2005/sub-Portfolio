@@ -257,11 +257,12 @@ body {
 
 .inner-home img{
     object-fit: cover;
-    max-width: 18rem;
-    max-height: 15rem;
+    max-width: 20rem;
+    max-height: 17rem;
     border: 7px solid cyan;
+    border-radius: 50%;
     box-shadow: 0 0 5px cyan,0 0 10px cyan,0 0 15px cyan,0 0 20px cyan;
-    animation: shape-ani 15s infinite ease-in-out;
+    animation: shape-ani 10s infinite ease-in-out;
 }
 
 @media(max-width:800px){
@@ -281,13 +282,13 @@ body {
         border-radius:30% 70% 70% 30% / 30% 30% 70% 70%  ;
     }
     25%{
-        border-radius: 69% 37% 25% 77% / 70% 19% 81% 34% ;
+        border-radius:47% 50% 43% 57% / 42% 31% 69% 59%   ;
     }
     50%{
         border-radius: 53% 42% 31% 65% / 52% 77% 24% 46% ;
     }
     75%{
-        border-radius: 69% 37% 25% 77% / 70% 19% 81% 34% ;
+        border-radius: 47% 50% 43% 57% / 42% 31% 69% 59%  ;
     }
     100%{
         border-radius:30% 70% 70% 30% / 30% 30% 70% 70%  ;
