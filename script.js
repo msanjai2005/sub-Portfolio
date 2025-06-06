@@ -87,7 +87,7 @@ const projects = [
       {
         title: "Guess The Number Game",
         description: "An interactive number guessing game with instant feedback. Enhances logical thinking in a fun and engaging way.",
-        link:"https://github.com/msanjai2005/" 
+        link:"https://github.com/msanjai2005/GuessTheNumber" 
       },
       {
         title: "Rock-Paper-Scissor Game",
@@ -97,12 +97,12 @@ const projects = [
       {
         title: "To-Do-List App",
         description: "A lightweight app to manage daily tasks with add, delete, and mark-complete features. Designed for productivity and ease of use.",
-        link:"https://github.com/msanjai2005/" 
+        link:"https://github.com/msanjai2005/ToDoList" 
       },
       {
         title: "Calculator App",
         description: "A basic calculator for performing arithmetic operations. Built with a clean interface and real-time input handling.",
-        link:"https://github.com/msanjai2005/" 
+        link:"https://github.com/msanjai2005/SimpleCalculator"
       }
     ];
 
