@@ -82,27 +82,27 @@ const projects = [
       {
         title: "Recipe App",
         description: "A simple and responsive app to browse and view recipes with ingredients and instructions. Built for easy meal planning and inspiration.",
-        link:"https://github.com/msanjai2005" 
+        link:"https://github.com/msanjai2005/" 
       },
       {
         title: "Guess The Number Game",
         description: "An interactive number guessing game with instant feedback. Enhances logical thinking in a fun and engaging way.",
-        link:"https://github.com/msanjai2005" 
+        link:"https://github.com/msanjai2005/" 
       },
       {
         title: "Rock-Paper-Scissor Game",
         description: "A classic rock-paper-scissors game with score tracking. Features clean UI and simple game logic for quick play.",
-        link:"https://github.com/msanjai2005" 
+        link:"https://github.com/msanjai2005/" 
       },
       {
         title: "To-Do-List App",
         description: "A lightweight app to manage daily tasks with add, delete, and mark-complete features. Designed for productivity and ease of use.",
-        link:"https://github.com/msanjai2005" 
+        link:"https://github.com/msanjai2005/" 
       },
       {
         title: "Calculator App",
         description: "A basic calculator for performing arithmetic operations. Built with a clean interface and real-time input handling.",
-        link:"https://github.com/msanjai2005" 
+        link:"https://github.com/msanjai2005/" 
       }
     ];
 
