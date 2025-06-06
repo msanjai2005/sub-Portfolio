@@ -77,7 +77,7 @@ const projects = [
       {
         title: "Restuarant Web APP",
         description: "A responsive restaurant website with menu display and table reservation features, built for a smooth user experience.",
-        link: "https://github.com/msanjai2005/Rock_Paper_Scissors"
+        link: "https://github.com/msanjai2005/"
       },
       {
         title: "Recipe App",
@@ -92,7 +92,7 @@ const projects = [
       {
         title: "Rock-Paper-Scissor Game",
         description: "A classic rock-paper-scissors game with score tracking. Features clean UI and simple game logic for quick play.",
-        link:"https://github.com/msanjai2005/" 
+        link:"https://github.com/msanjai2005/Rock_Paper_Scissors"
       },
       {
         title: "To-Do-List App",
