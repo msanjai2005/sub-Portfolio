@@ -77,7 +77,7 @@ const projects = [
       {
         title: "Restuarant Web APP",
         description: "A responsive restaurant website with menu display and table reservation features, built for a smooth user experience.",
-        link: "https://github.com/msanjai2005/"
+        link: "https://github.com/msanjai2005/Restuarant"
       },
       {
         title: "Recipe App",
