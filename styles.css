@@ -72,20 +72,28 @@ body {
     text-decoration: none;
   }
 
-  .hideOnMobile a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 0%;
-    background-color: cyan;
-    transition: width 0.5s ease;
-  }
-
-  .hideOnMobile a:hover::after {
-    width: 100%;
+.hideOnMobile a {
+  position: relative;
+  display: inline-block;
 }
+
+.hideOnMobile a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: cyan;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.5s ease;
+}
+
+.hideOnMobile a:hover::after {
+  transform: scaleX(1);
+}
+
 .hideOnMobile a:hover{
     color: cyan;
 }
