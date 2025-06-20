@@ -151,7 +151,6 @@ body {
 }
 
 .mainbar img{
-    padding: 5px;
     border-radius: 5px;
     transition: all 0.1s linear;
 }
@@ -163,16 +162,18 @@ body {
     display: none !important;
 }
 
-
 @media(max-width: 800px){
     .hideOnMobile{
         display: none !important;
     }
     .hamburger{
         display: block !important;
-        padding: 0px 20px;
-        margin-top: 10px;
-        cursor: pointer;
+        cursor: pointer !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        font-size: x-large !important;
+        margin-right: 20px;
     }
 }
 
