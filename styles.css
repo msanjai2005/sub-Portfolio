@@ -286,12 +286,12 @@ body {
 
 @media(max-width:600px){
     .inner-home img{
-        margin-top: 60px !important;
-        width: 20rem;
+        margin-top: 200px !important;
+        width: 18rem;
     }
     .inner-home .Small_about{
         font-size: medium;
-        padding: 30px;
+        padding: 0 20px 10px 20px;
     }
 }
 
