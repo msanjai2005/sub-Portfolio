@@ -8,7 +8,7 @@ html {
 }
 /* Adjust 60px to match your actual header height */
 :root {
-  scroll-padding-top: 75px;
+  scroll-padding-top: 60px;
 }
 button{
     cursor: pointer;
@@ -267,7 +267,7 @@ body {
 
 .inner-home img{
     object-fit: cover;
-    max-width: 30rem;
+    max-width: 25rem;
     animation: floatImage 4s ease-in-out infinite;
 }
 @keyframes floatImage {
@@ -410,6 +410,10 @@ body {
         justify-content: center;
         align-items: center;
         padding: 0 !important;
+    }
+    .inner_about .image{
+        width: 15rem;
+        margin: 0 !important;
     }
     .inner_about img{
         margin-top: 30px !important;
