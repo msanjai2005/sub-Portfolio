@@ -594,11 +594,7 @@ body {
     .inner_project{
         gap: 10px;
     }
-    .project{
-        width: 15rem;
-        height: auto;
-        margin-left: 13px;
-    }
+
 }
 
 /* -----------------------Contact-page------------------------ */
