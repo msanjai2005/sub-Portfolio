@@ -48,28 +48,57 @@ const Topic_skill=[
     "Programming Languages & Tools",
     "Web Development"
 ];
-let pro_skill=["Python","Java","Git","GitHub","VS Code"];
-let web_skill=["HTML 5","CSS 3","JavaScript","React JS","MySQL"];
-const skills=[pro_skill,web_skill];
-let pro= document.querySelector(".programming");
-let web= document.querySelector(".web");
-const arr=[pro,web];
+let pro_skill = ["Python", "Java", "JavaScript"];
+let web_skill = ["HTML 5", "CSS 3", "JavaScript", "React JS", "Tailwind css", "MySQL"];
+let images1 = ["images/python.png", "images/java.png", "images/javascript.png"];
+let images2 = ["images/html.png", "images/css.png", "images/javascript.png", "images/react.png", "images/tailwind.png", "images/mysql.png"];
+let images3 = ["images/git.png", "images/github.png", "images/vscode.png"];
+let tools = ["Git", "GitHub", "VS Code"];
 
-for (i = 0; i<2; i++){
-    arr[i].innerHTML+=`
-    <div class="ToS">
-        <h2>${Topic_skill[i]}</h2>
-    </div>
-`;
-    for(j=0; j<5; j++){
-        arr[i].innerHTML+=`
-    <div class="sk">
-        <h3>${skills[i][j]}</h3>
-        <p>intermediate</p>
-    </div>
-`;
-    }
-}
+let pro = document.querySelector(".programming");
+let web = document.querySelector(".web");
+let tool = document.querySelector(".tools");
+
+// Programming Skills
+pro_skill.forEach((skill, i) => {
+  pro.innerHTML += `
+    <div>
+      <img src="${images1[i]}" alt="${skill}">
+      <li class='sk'>${skill}</li>
+    </div>`;
+});
+
+// Web Skills
+web_skill.forEach((skill, i) => {
+  web.innerHTML += `
+    <div>
+      <img src="${images2[i]}" alt="${skill}">
+      <li class='sk'>${skill}</li>
+    </div>`;
+});
+
+// Tools
+tools.forEach((skill, i) => {
+  tool.innerHTML += `
+    <div>
+      <img src="${images3[i]}" alt="${skill}">
+      <li class='sk'>${skill}</li>
+    </div>`;
+});
+
+// for (i = 0; i<2; i++){
+//     arr[i].innerHTML+=`
+//     <div class="ToS">
+//         <h2>${Topic_skill[i]}</h2>
+//     </div>`;
+//     for(j=0; j<web_skill.length; j++){
+//         arr[i].innerHTML+=`
+//     <div class="sk">
+//         <h3>${skills[i][j]}</h3>
+//         <p>intermediate</p>
+//     </div>`;
+//     }
+// }
 
 // ------------------project-page--------------->
 

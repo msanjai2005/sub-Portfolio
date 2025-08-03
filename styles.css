@@ -442,80 +442,45 @@ body {
 }
 .skill h1{
     padding-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
-
 .inner_skill{
-    width: 75%;
-    min-height: 80dvh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.inner_skill > div {
-    max-width: 18rem;
-    min-height: 18rem;
-    padding: 50px 40px;
-    margin-bottom: 20px;
-    background-color: #001011;
-    border:3px solid cyan;
-    border-radius: 30px;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items:center;
-    transition: all 0.2s linear;
-}
-
-.inner_skill > div:hover{
-    transform: translateY(-7px) scale(1.001);
-    box-shadow: 0 0 1px cyan,0 0 10px cyan,0 0 15px cyan,0 0 20px cyan;
-    background-color: #002323;
-}
-
-.ToS{
-    padding: 0 10px;
-}
-
-.inner_skill .sk{
-    min-width: 7rem;
-    padding: 7px 10px;
-    margin: 5px;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 30px;
+}
+.inner_skill > div{
+    width:100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    border:1px solid cyan;
-    border-radius: 10px;
-    background-color:#000000;
-    transition: all 0.2s;
+    align-items: center;
+    gap: 50px;
 }
-
-.inner_skill div .sk p{
-    font-size: small;
-    color: #58ccc2;
+.sk{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
-
-.inner_skill .sk:hover{
-    transform: translateY(-5px);
+.sk > div{
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
-
-
-@media (max-width:600px){
-    .inner_skill > div{
-        padding: 20px 10px !important;
-        font-size: small !important;
-    }
-    .inner_skill > div:first-child{
-        padding: 0 10px;
-    }
-    .inner_skill .sk{
-        min-width: 5rem ;
-        margin: 2px;
-        font-size: smaller;
-    }
+.sk > div:hover{
+    transform: translateY(-10px);
+}
+.sk div img{
+    width: 80px;
 }
 
 /* ----------------------Project-page------------------- */
