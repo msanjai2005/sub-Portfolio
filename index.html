@@ -29,17 +29,17 @@
             </ul>
             <ul class="mainbar">
                 <li><a>Portfolio</a></li>
-                <li class="hideOnMobile"><a href="#home">Home</a></li>
-                <li class="hideOnMobile"><a href="#about">About</a></li>
-                <li class="hideOnMobile"><a href="#skills">Skills</a></li>
-                <li class="hideOnMobile"><a href="#project">Projects</a></li>
-                <li class="hideOnMobile"><a href="#contact">Contact</a></li>  
+                <li class="hideOnMobile"><a class="nav-link" href="#home">Home</a></li>
+                <li class="hideOnMobile"><a class="nav-link" href="#about">About</a></li>
+                <li class="hideOnMobile"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="hideOnMobile"><a class="nav-link" href="#project">Projects</a></li>
+                <li class="hideOnMobile"><a class="nav-link" href="#contact">Contact</a></li>  
                 <li class="hamburger" onclick="sidebarShow()"><img src="images/svg1.svg" alt=""></li>
             </ul>
         </nav>
     </div>
     <!-- -------------------Home-page------------------- -->
-    <div class="Home" id="home">
+    <section class="Home" id="home">
         <div class="inner-home">
             <div class="Small_about">
                 <h3>Hello It's me</h3>
@@ -56,9 +56,9 @@
             </div>
             <img src="image.png" alt="">
         </div>
-    </div>
+    </section>
     <!-- ---------------------About-Page------------------- -->
-     <div class="about" id="about">
+     <section class="about" id="about">
         <h1>About <span> Me</span></h1>
         <div class="inner_about">
             <div class="image">
@@ -88,11 +88,11 @@
                 <button><a href="#contact">Get in Touch <i class="fas fa-paper-plane"></i></a> </button>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- --------------------Skills-page-------------------- -->
 
-    <div class="skill" id="skills">
+    <section class="skill" id="skills">
         <h1>Skills</h1>
         <div class="inner_skill">
             <div>
@@ -108,18 +108,18 @@
                 <div class="tools sk"></div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- --------------------Project-page------------------ -->
 
-    <div class="projects" id="project">
+    <section class="projects" id="project">
         <h1><span>My </span> Creations</h1>
         <div class="inner_project" id="projects-container"></div>
-    </div>
+    </section>
 
     <!-- ---------------------------Contact-page---------------------- -->
 
-    <div class="contacts" id="contact">
+    <section class="contacts" id="contact">
         <h1>Get In Touch</h1>
         <div class="inner_contact">
             <div class="contact">
@@ -140,15 +140,15 @@
             <div class="outer_form">
                 <h3>Feel free to message</h3>
                 <form id="contact-form" class="form">
-                    <input type="text" name="name"placeholder="Type Your Name"><br>
-                    <input type="email" name="email" placeholder="Type Your Email"><br>
+                    <input type="text" name="name"placeholder="Type Your Name" required><br>
+                    <input type="email" name="email" placeholder="Type Your Email" required><br>
                     <input type="text" name="title" placeholder="Subject" required><br>
-                    <textarea name="message" placeholder="Type Your Message"></textarea><br>
+                    <textarea name="message" placeholder="Type Your Message" required></textarea><br>
                     <input type="submit" class="submit" value="Send Message">
                 </form>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- ------------------------------Footer-page---------------------------- -->
      

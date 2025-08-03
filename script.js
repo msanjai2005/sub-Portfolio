@@ -1,5 +1,29 @@
  
- 
+ const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-link");
+
+const options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.6, // 60% visible
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    const id = entry.target.getAttribute("id");
+    const navItem = document.querySelector(`.nav-link[href="#${id}"]`);
+
+    if (entry.isIntersecting) {
+      navLinks.forEach(link => link.classList.remove("active"));
+      navItem.classList.add("active");
+    }
+  });
+}, options);
+
+sections.forEach(section => {
+  observer.observe(section);
+});
+
     //---------------------side-menu-bar----------------->
     
 function sidebarShow() {
@@ -86,69 +110,73 @@ tools.forEach((skill, i) => {
     </div>`;
 });
 
-// for (i = 0; i<2; i++){
-//     arr[i].innerHTML+=`
-//     <div class="ToS">
-//         <h2>${Topic_skill[i]}</h2>
-//     </div>`;
-//     for(j=0; j<web_skill.length; j++){
-//         arr[i].innerHTML+=`
-//     <div class="sk">
-//         <h3>${skills[i][j]}</h3>
-//         <p>intermediate</p>
-//     </div>`;
-//     }
-// }
-
 // ------------------project-page--------------->
 
 const projects = [
       {
+        image:"images/project/img1.jpg",
         title: "Restuarant Web APP",
         description: "A responsive restaurant website with menu display and table reservation features, built for a smooth user experience.",
         techstack:['html', 'css', 'javaScript', 'git & github'],
-        link: "https://github.com/msanjai2005/Restuarant"
+        gitLink: "https://github.com/msanjai2005/Restuarant"
       },
       {
+        image:"images/project/img2.jpg",
+        title: "Weather Web App",
+        description: "A responsive weather app built with React and Tailwind CSS that displays real-time weather data using an API.",
+        techstack: ['React', 'Tailwind CSS', 'API', 'Git & GitHub'],
+        gitLink: "https://github.com/msanjai2005/WeatherApp_R",
+        Demo:""
+      },
+      {
+        image:"images/project/img3.jpg",
+        title: "Habit Tracker App",
+        description: "A responsive habit tracker built with React and Tailwind CSS, allowing users to manage and track their daily habits with local data storage.",
+        techstack: ['React', 'Tailwind CSS', 'JavaScript', 'Git & GitHub'],
+        gitLink: "https://github.com/msanjai2005/Habit-Tracker",
+        Demo:""
+      },
+      {
+        image:"",
         title: "Recipe App",
         description: "A simple and responsive app to browse and view recipes with ingredients and instructions. Built for easy meal planning and inspiration.",
-        techstack:['html', 'css', 'javaScript', 'git & github'],
-        link:"https://github.com/msanjai2005/RecipeApp" 
+        techstack:['html', 'css', 'javaScript','Git & GitHub'],
+        gitLink:"https://github.com/msanjai2005/RecipeApp",
+        Demo:""
       },
       {
-        title: "Guess The Number Game",
-        description: "An interactive number guessing game with instant feedback. Enhances logical thinking in a fun and engaging way.",
-        techstack:['html', 'css', 'javaScript', 'git & github'],
-        link:"https://github.com/msanjai2005/GuessTheNumber" 
-      },
-      {
-        title: "Rock-Paper-Scissor Game",
-        description: "A classic rock-paper-scissors game with score tracking. Features clean UI and simple game logic for quick play.",
-        techstack:['html', 'css', 'javaScript', 'git & github'],
-        link:"https://github.com/msanjai2005/Rock_Paper_Scissors"
-      },
-      {
+        image:"",
         title: "To-Do-List App",
         description: "A lightweight app to manage daily tasks with add, delete, and mark-complete features. Designed for productivity and ease of use.",
-        techstack:['html', 'css', 'javaScript', 'git & github'],
-        link:"https://github.com/msanjai2005/ToDoList" 
+        techstack:['React', 'Tailwind CSS', 'Git & GitHub'],
+        gitLink:"https://github.com/msanjai2005/",
+        Demo:""
       },
       {
+        image:"",
         title: "Calculator App",
         description: "A basic calculator for performing arithmetic operations. Built with a clean interface and real-time input handling.",
-        techstack:["html", 'css', 'javaScript', 'git & github'],
-        link:"https://github.com/msanjai2005/SimpleCalculator"
+        techstack:["html", 'css', 'javaScript','Git & GitHub'],
+        gitLink:"https://github.com/msanjai2005/SimpleCalculator",
+        Demo:""
       }
     ];
 
     const container = document.getElementById("projects-container");
 
     const projectHTML = projects.map(project => `
-      <div class="project">
-        <h2>${project.title}</h2>
-        <p>${project.description}</p>
-        <p class="techstack">Tech Stack: <br/>${project.techstack.map(tech => `<button>${tech}</button>`).join(' ')}</p>
-        <button class='btn'><a href="${project.link}" target=_blank>Learn more <i class="fa-solid fa-arrow-right"></i></a></button>
+      <div class="proFull">
+        <img class="projectImage" src="${project.image}" alt="image">
+        <div class="project">
+          <h2>${project.title}</h2>
+          <p>${project.description}</p>
+          <h4 class="techstack">Tech Stack :</h4>
+          <div class="tech">${project.techstack.map(tech => `<div>${tech}</div>`).join(' ')}</div>
+          <div class="links">
+            <span><a href="${project.gitLink}" target=_blank>Github <i class="fa-solid fa-arrow-right"></i></a></span>
+            <span><a href="${project.Demo}" target=_blank>Demo <i class="fa-solid fa-arrow-right"></i></a></span>
+          </div>
+        </div>
       </div>
     `).join("");
 
