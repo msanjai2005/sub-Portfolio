@@ -473,6 +473,7 @@ body {
 }
 .sk > div{
     height: 120px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -481,6 +482,8 @@ body {
     transition: transform 0.3s ease;
 }
 .sk > div:hover{
+    border: 1px solid cyan;
+    border-radius: 6px;
     transform: translateY(-10px);
     color: cyan;
 }
