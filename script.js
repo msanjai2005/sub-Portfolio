@@ -137,7 +137,7 @@ const projects = [
         Demo:""
       },
       {
-        image:"",
+        image:"images/project/img4.jpg",
         title: "Recipe App",
         description: "A simple and responsive app to browse and view recipes with ingredients and instructions. Built for easy meal planning and inspiration.",
         techstack:['html', 'css', 'javaScript','Git & GitHub'],
@@ -145,7 +145,7 @@ const projects = [
         Demo:""
       },
       {
-        image:"",
+        image:"images/project/img5.jpg",
         title: "To-Do-List App",
         description: "A lightweight app to manage daily tasks with add, delete, and mark-complete features. Designed for productivity and ease of use.",
         techstack:['React', 'Tailwind CSS', 'Git & GitHub'],
@@ -153,7 +153,7 @@ const projects = [
         Demo:""
       },
       {
-        image:"",
+        image:"images/project/img6.jpg",
         title: "Calculator App",
         description: "A basic calculator for performing arithmetic operations. Built with a clean interface and real-time input handling.",
         techstack:["html", 'css', 'javaScript','Git & GitHub'],

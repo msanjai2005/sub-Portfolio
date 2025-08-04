@@ -31,8 +31,9 @@ body {
     color: white;
 }
 .nav-link.active {
-  color: #ff002f; /* or your theme color */
+  color: #00ffee;
   font-weight: bold;
+  border-bottom: 2px solid cyan;
 }
 .menu{
     width: 100%;
@@ -591,10 +592,7 @@ body {
 
 
 @media(max-width:400px){
-    .inner_project{
-        gap: 10px;
-    }
-
+    
 }
 
 /* -----------------------Contact-page------------------------ */
