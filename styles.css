@@ -33,7 +33,7 @@ body {
 .nav-link.active {
   color: #00ffee;
   font-weight: bold;
-  border-bottom: 2px solid cyan;
+  border-bottom: 3px solid cyan;
 }
 .menu{
     width: 100%;
